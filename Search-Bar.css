@@ -10,8 +10,6 @@
     font-size: 17px;
 }
 
-
-
 .search-container input[type=text] {
     padding: 6px;
 }
@@ -33,8 +31,7 @@
         float: none;
     }
 
-    .search-container input[type=text], 
-    .search-container button {
+    .search-container input[type=text], .search-container button {
         float: none;
         display: block;
         width: 100%;
