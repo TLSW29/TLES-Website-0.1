@@ -8,14 +8,10 @@
     border: 2px solid #000000;
     margin-top: 8px;
     font-size: 17px;
-}
-
-.search-container input[type=text] {
     padding: 6px;
 }
 
 .search-container button {
-    padding: 6px 10px;
     margin: -4px;
     background: #ddd;
     cursor: pointer;
