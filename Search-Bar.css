@@ -1,11 +1,13 @@
-.search-bar {
+.search-container {
+    background: #ddd;
+    color: black;
+    padding: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
     border: 2px solid #000;
-    width: fit-content;
-    background: #ddd;
-    padding: 4px;
+    text-align: center;
+    border-radius: 50px;
 }
 
 .search-form {
@@ -40,17 +42,53 @@
     width: 24px;
 }
 
-.search-container {
-    background: #ddd;
-    color: white;
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 2px solid #000;
+/* Style for the hover quote container */
+.hover-quote {
+    display: none; /* Hidden by default */
+    position: absolute;
+    background-color: #ffffff;
+    color: #000;
+    border: 1px solid #ccc;
+    padding: 8px;
+    font-size: 14px;
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    white-space: nowrap; /* Prevent text wrapping */
+    transform: translateX(109px) translateY(30px); /* Position below button */
+    left: 50%; /* Center horizontally */
     text-align: center;
-    border-radius: 50px;
+
+    /* Space for the triangle pointer */
+    margin-top: 8px;
 }
+
+/* Triangle pointer */
+.hover-quote::before {
+    content: ""; /* Empty content for the triangle */
+    position: absolute;
+    top: -10px; /* Position the triangle above the bubble */
+    left: 50%; /* Center align the triangle */
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #ffffff; /* Matches the bubble's background color */
+    z-index: 1;
+}
+
+/* Show the quote on hover */
+.search-button:hover .hover-quote {
+    display: block;
+}
+
+/* Ensure the search container is positioned relatively for proper placement */
+.search-container {
+    position: relative;
+}
+
+
 
 /* Responsive design for search bar */
 @media screen and (max-width: 600px) {
@@ -58,11 +96,11 @@
         float: none;
     }
 
-    .search-container input[type=text]{
+    .search-form input[type="text"] {
         float: none;
         display: block;
         width: 100%;
         padding: 14px;
-        border: 1px solid #ccc;  
+        border: 1px solid #ccc;
     }
 }
