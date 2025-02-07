@@ -1,0 +1,23 @@
+.settings {
+    position: absolute;
+    top: 10px;
+    left: 80%;
+    transform: translateX(-50%);
+}
+
+.setting-button {
+    width: 56px;
+    height: 56px;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.setting-button img {
+    width: 28px;
+    height: 28px;
+}
