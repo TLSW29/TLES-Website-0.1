@@ -1,5 +1,5 @@
 .search-container {
-    background: #ddd;
+    background: white;
     color: black;
     padding: 10px;
     display: flex;
@@ -42,65 +42,42 @@
     width: 24px;
 }
 
-/* Style for the hover quote container */
 .hover-quote {
-    display: none; /* Hidden by default */
+    display: none;
     position: absolute;
-    background-color: #ffffff;
-    color: #000;
+    background-color: white;
+    color: black;
     border: 1px solid #ccc;
     padding: 8px;
     font-size: 14px;
-    border-radius: 12px; /* Rounded corners */
+    border-radius: 12px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     z-index: 10;
-    white-space: nowrap; /* Prevent text wrapping */
-    transform: translateX(109px) translateY(30px); /* Position below button */
-    left: 50%; /* Center horizontally */
+    white-space: nowrap;
+    transform: translateX(109px) translateY(30px);
+    left: 50%;
     text-align: center;
-
-    /* Space for the triangle pointer */
     margin-top: 8px;
 }
 
-/* Triangle pointer */
 .hover-quote::before {
-    content: ""; /* Empty content for the triangle */
+    content: "";
     position: absolute;
-    top: -10px; /* Position the triangle above the bubble */
-    left: 50%; /* Center align the triangle */
+    top: -10px;
+    left: 50%;
     transform: translateX(-50%);
     width: 0;
     height: 0;
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
-    border-bottom: 10px solid #ffffff; /* Matches the bubble's background color */
+    border-bottom: 10px solid #ffffff;
     z-index: 1;
 }
 
-/* Show the quote on hover */
 .search-button:hover .hover-quote {
     display: block;
 }
 
-/* Ensure the search container is positioned relatively for proper placement */
 .search-container {
     position: relative;
-}
-
-
-
-/* Responsive design for search bar */
-@media screen and (max-width: 600px) {
-    .search-container {
-        float: none;
-    }
-
-    .search-form input[type="text"] {
-        float: none;
-        display: block;
-        width: 100%;
-        padding: 14px;
-        border: 1px solid #ccc;
-    }
 }

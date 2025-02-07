@@ -1,0 +1,17 @@
+.menu {
+    margin-right: 20px;
+    margin-left: 10px;
+}
+
+.menu-button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.menu-button img {
+    width: 24px;
+    height: 24px;
+    background: white;
+}

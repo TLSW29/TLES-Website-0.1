@@ -1,0 +1,12 @@
+.logo {
+    text-align: center;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.logo img {
+    width: 200px;
+    height: 50px;
+}
