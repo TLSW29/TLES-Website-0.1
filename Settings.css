@@ -1,13 +1,13 @@
 .settings {
     position: absolute;
-    top: 10px;
-    left: 80%;
+    top: 20px;
+    left: 85%;
     transform: translateX(-50%);
 }
 
 .setting-button {
-    width: 56px;
-    height: 56px;
+    width: 60px;
+    height: 60px;
     background-color: white;
     border: 2px solid black;
     border-radius: 50%;
@@ -18,6 +18,6 @@
 }
 
 .setting-button img {
-    width: 28px;
-    height: 28px;
+    width: 30px;
+    height: 30px;
 }

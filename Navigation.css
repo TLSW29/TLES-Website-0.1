@@ -1,4 +1,6 @@
 .navigation{
     display: flex;
     align-items: center;
+    height: 92px;
+    width: 100%;
 }

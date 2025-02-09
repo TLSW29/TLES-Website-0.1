@@ -1,17 +1,21 @@
 .menu {
-    margin-right: 20px;
-    margin-left: 10px;
+    margin-left: 16px;
+    margin-right: 16px;
+    position: relative;
+    top: -4px;
 }
 
 .menu-button {
     background: none;
     border: none;
-    padding: 0;
     cursor: pointer;
+    line-height: 0;
 }
 
 .menu-button img {
-    width: 24px;
-    height: 28px;
+    width: 30px;
+    height: 34px;
     background: white;
+    vertical-align: middle;
+    margin: 0;
 }

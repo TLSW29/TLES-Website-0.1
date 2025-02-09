@@ -1,0 +1,27 @@
+.profile {
+    background: white;
+    color: black;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #000;
+    text-align: center;
+    border-radius: 50px;
+    position: absolute;
+    top: 20px;
+    right: 16px;
+    height: 56px;
+    font-size: 18px;
+    font-family: 'Arial', sans-serif;
+}
+
+.sign-in-container {
+    font-size: 18px;
+    font-family: 'Arial', sans-serif;
+    cursor: pointer;
+    text-align: center;
+    color: black;
+    padding: 10px 15px;
+    display: inline-block; 
+}
