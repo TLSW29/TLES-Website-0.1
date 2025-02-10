@@ -1,21 +1,31 @@
 .menu {
-    margin-left: 16px;
-    margin-right: 16px;
     position: relative;
-    top: -4px;
+    top: -6px;
+    left: 1.5%;
 }
 
 .menu-button {
     background: none;
     border: none;
     cursor: pointer;
+    padding: 0;
     line-height: 0;
+    transition: transform 0.2s ease;
 }
 
 .menu-button img {
     width: 30px;
     height: 34px;
-    background: white;
+    background-color: white;
     vertical-align: middle;
     margin: 0;
+    transition: transform 0.2s ease;
+}
+
+.menu-button:hover {
+    transform: scale(1.1);
+}
+
+.menu-button:hover img {
+    transform: scale(1.1);
 }
