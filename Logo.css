@@ -1,28 +1,41 @@
 .logo {
-    display: inline-block;
+    /* Box Model */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    margin: 0px 20px;
     position: absolute;
-    top: 20px;
     left: 50%;
     transform: translateX(-50%);
+
+    /* Typography */
     text-align: center;
 }
 
 .logo-link {
+    /* Box Model */
     display: block;
-    text-decoration: none;
-    padding: 0;
+    height: 60px;
     margin: 0;
+    padding: 0;
     width: 200px;
-    height: 56px;
+
+    /* Typography */
+    text-decoration: none;
+
+    /* Transitions */
     transition: transform 0.2s ease;
 }
 
 .logo-link:hover {
+    /* Transitions */
     transform: scale(1.1);
 }
 
 .logo-link img {
+    /* Box Model */
     display: block;
-    width: 100%;
     height: 100%;
+    width: 100%;
 }

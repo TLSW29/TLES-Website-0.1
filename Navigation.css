@@ -1,6 +1,12 @@
-.navigation{
+.navigation {
     display: flex;
     align-items: center;
-    height: 92px;
+    justify-content: space-between; /* Ensure spacing between elements */
+    height: 100px;
     width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+
+    /* Ensuring the content is evenly spaced, so the logo remains centered */
+    position: relative;
 }

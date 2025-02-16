@@ -1,53 +1,61 @@
 .settings {
-    position: absolute;
-    top: 25px;
-    right: 11%;
-    transform: translateX(-50%);
-    z-index: 10;
+    /* Box Model */
+    display: flex;
+    align-items: center;
+    margin: 0px 5px 0px auto;
 }
 
 .setting-button {
-    width: 46px;
-    height: 46px;
+    /* Box Model */
     background-color: white;
     border: 2px solid black;
     border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 46px;
+    width: 46px;
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .setting-button:hover {
+    /* Visual Styles */
     background-color: #f0f0f0;
+
+    /* Transitions */
     transform: scale(1.1);
 }
 
 .setting-button img {
-    width: 24px;
-    height: 24px;
+    /* Box Model */
     display: block;
+    height: 24px;
+    width: 24px;
 }
 
 .hover-quote-settings {
-    display: none;
-    position: absolute;
+    /* Box Model */
     background-color: white;
-    color: black;
     border: 1px solid #ccc;
-    padding: 8px;
-    font-size: 10px;
     border-radius: 12px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    z-index: 10;
-    white-space: nowrap;
-    transform: translateX(-50%) translateY(120%);
+    display: none;
     left: 50%;
-    text-align: center;
     margin-top: 8px;
+    padding: 8px;
+    position: absolute;
+    transform: translateX(-50%) translateY(120%);
+    white-space: nowrap;
+    z-index: 10;
+
+    /* Typography */
+    color: black;
+    font-size: 10px;
+    text-align: center;
 }
 
 .setting-button:hover .hover-quote-settings {
+    /* Box Model */
     display: block;
 }

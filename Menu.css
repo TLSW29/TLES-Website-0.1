@@ -1,31 +1,44 @@
 .menu {
-    position: relative;
-    top: -6px;
-    left: 1.5%;
+    /* Box Model */
+    display: flex;
+    align-items: center;
+    margin: 0px 5px;
 }
 
 .menu-button {
+    /* Box Model */
     background: none;
     border: none;
     cursor: pointer;
     padding: 0;
+
+    /* Typography */
     line-height: 0;
+
+    /* Transitions */
     transition: transform 0.2s ease;
 }
 
 .menu-button img {
-    width: 30px;
-    height: 34px;
+    /* Box Model */
     background-color: white;
-    vertical-align: middle;
+    height: 36px;
     margin: 0;
+    width: 30px;
+
+    /* Typography */
+    vertical-align: middle;
+
+    /* Transitions */
     transition: transform 0.2s ease;
 }
 
 .menu-button:hover {
+    /* Transitions */
     transform: scale(1.1);
 }
 
 .menu-button:hover img {
+    /* Transitions */
     transform: scale(1.1);
 }

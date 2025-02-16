@@ -1,35 +1,51 @@
 .profile {
-    background-color: white;
-    color: black;
-    padding: 0 10px;
+    /* Box Model */
+    border: 2px solid #000;
+    border-radius: 50px;
+    box-sizing: border-box;
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 2px solid #000;
-    border-radius: 50px;
-    text-align: center;
-    position: absolute;
-    top: 20px;
-    right: 1.5%;
-    height: 52px;
-    font-size: 18px;
+    height: 60px;
+    margin: 0px 5px;
+
+    /* Typography */
+    color: black;
     font-family: Arial, sans-serif;
+    font-size: 18px;
+    text-align: center;
+
+    /* Visual Styles */
+    background-color: white;
+
+    /* Flexbox */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* Transitions */
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .profile:hover {
+    /* Visual Styles */
     background-color: #f0f0f0;
+
+    /* Transitions */
     transform: scale(1.1);
 }
 
 .profile-container {
-    font-size: 18px;
-    font-family: Arial, sans-serif;
-    cursor: pointer;
-    text-align: center;
-    color: black;
-    padding: 10px 15px;
-    display: inline-block;
+    /* Box Model */
     background-color: transparent;
     border: none;
+    display: inline-block;
+    padding: 10px 15px;
+
+    /* Typography */
+    color: black;
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    text-align: center;
 }
